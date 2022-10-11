@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Formulário EPA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Formulário</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form">
+        <h1 id="add-user">Adicionar usuário</h1>
+        <div>
+            <label for="name">Nome completo:</label>
+            <input type="text" id="name" placeholder="Ex: Ryan Petris" />
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Ex: email@hotmail.com"/>
+        </div>
+        <div>
+            <label for="adress">Endereço:</label>
+            <input type="text" id="adress" placeholder="Ex: Rua dos limões, 77"/>
+        </div>
+        <div>
+            <label for="phone">Celular:</label>
+            <input type="number" id="phone" placeholder="(xx) xxxxx-xxxx"/>
+        </div>
+        <div>
+            <label for="cpf">CPF:</label>
+            <input type="number" id="cpf" placeholder="xxxxxxxxx-xx"/>
+        </div>
+        <input id="submit-button" class="btn" type="submit" value="Enviar" />
+      </form>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
