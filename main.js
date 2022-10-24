@@ -1,14 +1,12 @@
-const { default: Swal } = require("sweetalert2")
-
 const nameInput = document.querySelector('#name')
 const emailInput = document.querySelector('#email')
 const adressInput = document.querySelector('#adress')
 const phoneInput = document.querySelector('#phone')
 const cpfInput = document.querySelector('#cpf')
+const errorEmail = document.querySelector('#error-email')
 const submitButton = document.querySelector('#submit-button')
 
 submitButton.addEventListener('click', (e) => {
-    e.preventDefault()
 
     const nameValue = nameInput.value;
     const emailValue = emailInput.value;
@@ -16,7 +14,8 @@ submitButton.addEventListener('click', (e) => {
     const phoneValue = phoneInput.value;
     const cpfValue = cpfInput.value;
 
+
     if (nameValue === '' || emailValue === '' || adressValue === '' || phoneValue === '' || cpfValue === ''){
-        alert('Preencha o fomulário completo!')
+        alert('Preencha o fomulário por completo!')
     }
 })
