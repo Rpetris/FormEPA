@@ -17,6 +17,6 @@ submitButton.addEventListener('click', (e) => {
     const cpfValue = cpfInput.value;
 
     if (nameValue === '' || emailValue === '' || adressValue === '' || phoneValue === '' || cpfValue === ''){
-        Alert('Preencha o fomulário completo!')
+        alert('Preencha o fomulário completo!')
     }
 })
